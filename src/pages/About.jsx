@@ -14,8 +14,8 @@ const About = () => {
             <img
               src={about}
               alt="About"
-              className="img-fluid rounded shadow"
-              style={{ borderRadius: "20px", maxWidth: "380px" }}
+              className="img-fluid rounded shadow about-img"
+              style={{ borderRadius: "20px", width: "100%", maxWidth: "380px" }}
             />
           </div>
 

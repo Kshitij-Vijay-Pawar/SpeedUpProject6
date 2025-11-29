@@ -27,15 +27,16 @@ const Contact = () => {
 
   return (
     <section id="contact" className="container py-5 w-100">
-      <h2 className="text-center mb-5 pb-5 fs-1 fw-bold" style={{marginBottom:"620px"}}>Contact Me</h2>
+      <h2 className="text-center mb-4 fs-1 fw-bold">Contact Me</h2>
 
-      <div className="contact w-100">
-        <div className="w-50">
-          <img src={contact} alt=""/>
+      <div className="row align-items-center">
+        <div className="col-md-6 text-center mb-4 mb-md-0">
+          <img src={contact} alt="Contact" className="img-fluid rounded" />
         </div>
 
-        <div className="row justify-content-center w-50">
-          <div className="col-md-7">
+        <div className="col-md-6">
+          <div className="row justify-content-center">
+            <div className="col-md-10">
             <div className="mb-3">
               <label className="form-label">Your Name</label>
               <input
@@ -90,6 +91,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+    </div>
     </section>
   );
 };

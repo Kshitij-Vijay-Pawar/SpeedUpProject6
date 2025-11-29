@@ -1,6 +1,7 @@
 
 body {
   overflow-x: hidden;
+  padding-top: 70px; /* make space for fixed navbar */
 }
 
 .nav-link {
@@ -146,14 +147,14 @@ footer a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .secoundlayout{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  min-height: 70vh;
 }
 
 
@@ -165,6 +166,10 @@ footer a:hover {
               object-fit: cover;
             }
 
+@media (max-width: 576px) {
+  .project-card img { height: auto; }
+}
+
 .contact {
   display: flex;
   justify-content: center;
@@ -173,6 +178,28 @@ footer a:hover {
 }
 
 .contact img {
-  height: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive About image */
+.about-img {
   width: 100%;
+  max-width: 380px;
+}
+
+@media (max-width: 576px) {
+  .about-img {
+    max-width: 240px;
+  }
+
+  /* Make contact heading smaller on small devices */
+  #contact h2 {
+    font-size: 1.6rem; /* smaller than fs-1 */
+  }
+
+  /* Limit the contact image size on small devices */
+  .contact img {
+    max-width: 260px;
+  }
 }

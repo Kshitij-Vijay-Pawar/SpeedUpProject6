@@ -13,7 +13,7 @@ const Hero = () => {
         <div className="row align-items-center">
 
           {/* LEFT TEXT */}
-          <div className="col-md-6">
+          <div className="col-md-6 order-2 order-md-1 text-center text-md-start">
             <h3 className="fw-semibold mb-2">Hi, I'm</h3>
             <h1 className="fw-bold display-4">
               Kshitij <span style={{ color: "#0d6efd" }}>Pawar</span>
@@ -41,12 +41,12 @@ const Hero = () => {
           </div>
 
           {/* RIGHT IMAGE */}
-          <div className="col-md-6 text-center mt-4 mt-md-0 h-100">
+          <div className="col-md-6 order-1 order-md-2 text-center mt-4 mt-md-0 h-100">
             <img
               src={profile}
               alt="Profile"
-              
-              style={{ Width: "380px" }}
+              className="img-fluid mx-auto d-block"
+              style={{ width: "100%", maxWidth: "380px" }}
             />
           </div>
 
